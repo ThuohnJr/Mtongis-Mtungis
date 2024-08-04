@@ -28,6 +28,45 @@ nav ul{
 nav li:hover{
 
 }
+.products,.services{
+  display: inline-block;
+  position: relative;
+}
+.products-list,.services-list{
+  display: none;
+ position: absolute;
+ background-color: #f1f1f1;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.product-list a,.services-list a{
+ color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+
+  .product-list a:hover{
+background-color:olivedrab;
+}
+
+.products:hover .products-list{
+display: block;
+float: left;
+}
+a{
+list-style: none;
+}
+.services-list a:hover{
+background-color: olivedrab;
+
+}
+.services:hover .services-list{
+display:block
+}
+
 .button input{
   width:17%;
   height: 40px;
