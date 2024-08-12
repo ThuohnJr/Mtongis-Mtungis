@@ -25,9 +25,7 @@ nav ul{
   display:flex;
   gap:10px;
 }
-nav li:hover{
 
-}
 .products,.services{
   display: inline-block;
   position: relative;
@@ -237,6 +235,20 @@ color:wheat;
     margin:4px;
     gap:6px;
   }
+  .recycle{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  .recycle1{
+    width: 100%;
+  }
+  .recycle2{
+    width: 100%;
+    height: fit-content;
+  }
 }
 
 .btn {
@@ -277,8 +289,16 @@ color:wheat;
 footer{
   background:  linear-gradient(45deg, #f7ad06 ,#0dedce,#5ca309);
   text-align: center;
+  height:500px;
   padding:20px;
   font-size: 1.4rem;
 border-radius: 10px 10px 0 0 ;
 color: white;
+}
+@media(max-width:600px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  }
 }
